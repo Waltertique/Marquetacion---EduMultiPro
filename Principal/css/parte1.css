@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+:root {
+    --azul: #007bbd;
+    --blanco: rgb(255, 244, 230);
+    --gris: rgb(99, 95, 95);
+    --azulClaro: #4aa2d1;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(3, 102, 184);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+/* Baner -------------------- Baner*/
+.contenedor nav{
+    width: 100%;
+    height: 550px;
+    background-image: url("../img/fondo\ nube.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav h1{
+    font-size: 130px;
+    color: white;
+}
+nav p{
+    font-size: 35px;
+    color:  #1b82b9;
+}
+nav button{
+    margin: 30px 0px;
+    width: 135px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: #8fd5fa;
+    color: white;
+    font-size: 20px;
+}
+nav button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* centro -------------------- centro*/
+/* parte1 -------------------- parte1*/
+.contenedor article{
+    flex: 1;
+}
+article .contenido1{
+    margin: 100px auto 0px auto;
+    width: 85%;
+}
+article .contenido1 .titulo h2{
+    font-size: 60px;
+    margin: 0px 80px;
+    color: #c7ebff;
+}
+article .contenido1 .info{
+    display: flex;
+    flex-direction: row;
+}
+article .contenido1 img{
+    margin: 20px 0px 0px 0px;;
+    width: 500px;
+    height: 400px;
+}
+article .contenido1 p{
+    margin: auto 60px;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+/* parte2 -------------------- parte2*/
+
+article .contenido2{
+    margin: 30px auto;
+    width: 85%;
+}
+article .contenido2 .titulo h2{
+    font-size: 50px;
+    margin: 0px 0px 0px 700px;
+    color: #c7ebff;
+}
+article .contenido2 .info{
+    display: flex;
+    flex-direction: row;
+}
+article .contenido2 img{
+    margin: 20px 0px 0px 0px;
+    width: 500px;
+    height: 400px;
+}
+article .contenido2 p{
+    margin: auto 60px;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+/* parte3 -------------------- parte3*/
+article .contenido3{
+    margin: 30px auto 20px auto;
+    width: 85%;
+}
+article .contenido3 .titulo h2{
+    color: #c7ebff;
+    font-size: 50px;
+    margin: 0px 80px;
+}
+article .contenido3 .info{
+    display: flex;
+    flex-direction: row;
+}
+article .contenido3 img{
+    margin: 20px 0px 0px 0px;;
+    width: 500px;
+    height: 400px;
+}
+article .contenido3 p{
+    margin: auto 60px;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+/* footer -------------------- footer*/
+.contenedor footer{
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    height: 130px;
+    background-image: url("../img/gris\ fondo.jpg");
+}
+
+footer .informacion1{
+    color: white;
+    font-size: 30px;
+    margin: 15px 0px 0px 50px;
+}
+footer .informacion2{
+    margin: 15px 0px;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+:root {
+    --azul: #007bbd;
+    --blanco: rgb(253, 243, 229);
+    --gris: rgb(99, 95, 95);
+    --azulClaro: #4aa2d1;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--blanco);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/* Baner -------------------- Baner*/
+.contenedor nav{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    background: var(--azul);
+    background-position: center;
+    background-size: cover;
+}
+.contenedor nav .uno{
+    margin: 20px 20px 0px 40px;
+    width: 130px;
+    height: 90px;
+
+}
+.contenedor nav .uno img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor nav .dos{
+    margin: 20px 0px;
+    width: 450px;
+    height: 90px;
+    justify-items: center;
+}
+.contenedor nav .dos p{
+    font-size: 80px;
+    color: white;
+}
+.contenedor nav .tres{
+    margin: 20px 0px 0px 40px;
+    width: 500px;
+    height: 90px;
+    display: grid;
+    place-items: center;
+   
+}
+.contenedor nav .tres p{
+    font-size: 35px;
+    line-height: center;
+    color: aqua;
+}
+.contenedor nav .cuatro{
+    margin: 0px 25px;
+    width: 200px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto auto;
+    position: relative;
+}
+.contenedor nav .cuatro input{
+    padding: 0px 10px;
+    border-radius: 10px 0px 0px 10px;
+    width: 150px;
+    height: 35px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+}
+.contenedor nav .cuatro input::placeholder{
+    font-weight: normal;
+}
+.contenedor nav .cuatro input:hover::placeholder{
+    color: blue;
+}
+.contenedor nav .cuatro button{
+    width: 35px;
+    height: 36px;
+    float: right;
+    border-radius: 0 10px 10px 0;
+}
+.contenedor nav .cuatro button:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+/* centro -------------------- centro*/
+/* parte1 -------------------- centro*/
+.contenedor article{
+    flex: 1;
+}
+.contenedor article .parte1{
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    height: 70px;
+    display: flex; 
+    align-items: center;
+    background: var(--azulClaro);
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+}
+.contenedor article .parte1 button{
+    margin: 0px 8px;
+   width: 120px;
+   height: 100%;
+   border: none;
+   font-size: 15px;
+   border-bottom: none;
+   background: var(--azulClaro);
+    color: white;
+    font-size: 18px;
+}
+.contenedor article .parte1 button:hover{
+    transform: scale(1.1);
+    background: #37c1e4;
+    cursor: pointer;
+}
+/* parte2 -------------------- centro*/
+.contenedor article .parte2{
+    margin: 40px auto;
+    width: 1200px;
+    height: 340px;
+    overflow: hidden;    
+    position: relative;
+}
+.contenedor article .parte2 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fade 12s infinite; 
+    transition: opacity 1s ease-in-out;
+    cursor: pointer;
+}
+.contenedor article .parte2 img:nth-child(1) {
+    animation-delay: 0s;
+}
+.contenedor article .parte2 img:nth-child(2) {
+    animation-delay:4s;
+}
+.contenedor article .parte2 img:nth-child(3) {
+    animation-delay: 8s;
+}
+@keyframes fade {
+    
+    0%, 25% { opacity: 1; } 
+    50%, 75% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+.contenedor article .parte3{
+    margin: 60px 0px 0px 0px;
+    padding: 40px 0px;
+    width: 100%;
+    height: 490px;
+    background: var(--azulClaro);
+    background-position: center;
+    background-size: cover;
+
+}
+.contenedor article .parte3 h2{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+.contenedor article .parte3 aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.contenedor article .parte3 aside .caja1{
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 15px;
+}
+.contenedor article .parte3 aside .caja1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.contenedor article .parte3 aside .caja1 img{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px;
+}
+.contenedor article .parte3 aside .caja1 h2{
+    color: blue;
+    font-size: 15px;
+    margin: 10px;
+}
+.contenedor article .parte3 aside .caja1 p{
+    font-size: 15px;
+    margin: 10px;
+}
+.contenedor article .parte3 aside .caja2{
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 15px;
+}
+.contenedor article .parte3 aside .caja2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.contenedor article .parte3 aside .caja2 img{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px;
+}
+.contenedor article .parte3 aside .caja2 h2{
+    color: blue;
+    font-size: 15px;
+    margin: 10px;
+}
+.contenedor article .parte3 aside .caja2 p{
+    font-size: 15px;
+    margin: 10px;
+}
+.contenedor article .parte3 aside .caja3{
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 15px;
+}
+.contenedor article .parte3 aside .caja3:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.contenedor article .parte3 aside .caja3 img{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px;
+}
+.contenedor article .parte3 aside .caja3 h2{
+    color: blue;
+    font-size: 15px;
+    margin: 10px;
+}
+.contenedor article .parte3 aside .caja3 p{
+    font-size: 15px;
+    margin: 10px;
+}
+/* footer -------------------- footer*/
+.contenedor footer{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 130px;
+    background-image: url("../img/gris\ fondo.jpg");
+}
+
+footer .informacion1{
+    color: white;
+    font-size: 30px;
+    margin: 15px 0px 0px 50px;
+}
+footer .informacion2{
+    margin: 15px 0px;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-around;
+}

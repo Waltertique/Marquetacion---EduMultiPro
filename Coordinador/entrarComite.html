@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/entrarComite.css">
+
+    <link rel="icon" href="img/icono.png">
+    <title>Principal</title>
+</head>
+<body>
+    <div class="contenedor">
+
+        <!--banerrrrr-->
+        <nav>
+            <div class="uno"><img src="img/logo.png" alt=""></div>
+            <div class="dos"><p>EduMultiPro</p></div>
+            <div class="tres"><p>Tu Aliado en el camino educativo</p></div>
+            <div class="cuatro">
+                <input type="text" placeholder="Buscar...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </nav>
+        <!--Contenido-->
+        <article>
+            <div class="parte1">
+                <button type="button" onclick="location.href='inicio.html'">Inicio</button>
+                <button type="button" onclick="location.href='noticias.html'">Noticias</button>
+                <button type="button" onclick="location.href='horario.html'">Horarios</button>
+                <button type="button" onclick="location.href='boletines.html'">Boletines</button>
+                <button type="button" onclick="location.href='comites.html'">Comites</button>
+                <button type="button" onclick="location.href='planillas.html'">Planillas</button>
+                <button type="button" onclick="location.href='usuario.html'">Usuario</button>
+        </div>
+        <div class="body">  
+            <div class="titulo">
+                <h1>Comite 1</h1>
+            </div>  
+        <section class="body-contenido">
+            <div class="container">
+                <div class="sidebar">
+                    <h3>Personas</h3>
+                    <ul class="member-list">
+                        <li>
+                            <span><i class="fas fa-user"></i> Juan Pérez</span>
+                            <i class="fa-solid fa-trash-alt"></i>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-user"></i> María Gómez</span>
+                            <i class="fa-solid fa-trash-alt"></i>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-user"></i> Carlos López</span>
+                            <i class="fa-solid fa-trash-alt"></i>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Chat de Reunión -->
+                <div class="chat">
+                    <h3 class="chat-title">Chat del comité</h3>
+                    <div class="messages">
+                        <div class="message">
+                            <div class="sender">Juan Pérez:</div>
+                            <div class="text">Hola a todos, ¿están listos para la reunión?</div>
+                        </div>
+                        <div class="message">
+                            <div class="sender">María Gómez:</div>
+                            <div class="text">Sí, ya estoy lista.</div>
+                        </div>
+                    </div>
+                    <div class="message-input">
+                        <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+                        <button id="send-button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </article>
+
+        <!--Footerrrr-->
+
+        <div class="info">
+            <div class="a1"><p>Contactos</p></div>
+            <footer>
+                <div class="a2">
+                    <a>
+                        <i class="fa-solid fa-phone "></i>
+                        +546-160000
+                    </a>
+                </div>
+                <div class="a3">
+                    <a target="_blank">
+                        <i class="fa-brands fa-facebook "></i>
+                        EduMultipro_08
+                    </a>
+                </div>
+                <div class="a4">
+                    <a target="_blank">
+                        <i class="fa-regular fa-envelope "></i>
+                        Edu_Pro@gmail.com
+                    </a>
+                </div>
+                <div class="a5">
+                    <a target="_blank">
+                        <i class="fa-solid fa-globe "></i>
+                        EduMultiPro
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/entrarComite.js"></script>
+</body>
+</html>

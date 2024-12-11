@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+:root {
+    --azul: #007bbd;
+    --blanco: rgb(253, 243, 229);
+    --gris: rgb(99, 95, 95);
+    --azulClaro: #4aa2d1;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--blanco);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/* Baner -------------------- Baner*/
+.contenedor nav{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    background: var(--azul);
+    background-position: center;
+    background-size: cover;
+}
+.contenedor nav .uno{
+    margin: 20px 20px 0px 40px;
+    width: 130px;
+    height: 90px;
+
+}
+.contenedor nav .uno img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor nav .dos{
+    margin: 20px 0px;
+    width: 450px;
+    height: 90px;
+    justify-items: center;
+}
+.contenedor nav .dos p{
+    font-size: 80px;
+    color: white;
+}
+.contenedor nav .tres{
+    margin: 20px 0px 0px 40px;
+    width: 500px;
+    height: 90px;
+    display: grid;
+    place-items: center;
+   
+}
+.contenedor nav .tres p{
+    font-size: 35px;
+    line-height: center;
+    color: aqua;
+}
+.contenedor nav .cuatro{
+    margin: 0px 25px;
+    width: 200px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto auto;
+    position: relative;
+}
+.contenedor nav .cuatro input{
+    padding: 0px 10px;
+    border-radius: 10px 0px 0px 10px;
+    width: 150px;
+    height: 35px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+}
+.contenedor nav .cuatro input::placeholder{
+    font-weight: normal;
+}
+.contenedor nav .cuatro input:hover::placeholder{
+    color: blue;
+}
+.contenedor nav .cuatro button{
+    width: 35px;
+    height: 36px;
+    float: right;
+    border-radius: 0 10px 10px 0;
+}
+.contenedor nav .cuatro button:hover{
+    transform: scale(1.1);
+    color: blue;
+}
+/* centro -------------------- centro*/
+/* parte1 -------------------- centro*/
+.contenedor article{
+    flex: 1;
+}
+.contenedor article .parte1{
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    height: 70px;
+    display: flex; 
+    align-items: center;
+    background: var(--azulClaro);
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+}
+.contenedor article .parte1 button{
+    margin: 0px 8px;
+   width: 120px;
+   height: 100%;
+   border: none;
+   font-size: 15px;
+   border-bottom: none;
+   background: var(--azulClaro);
+    color: white;
+    font-size: 18px;
+}
+.contenedor article .parte1 button:hover{
+    transform: scale(1.1);
+    background: #37c1e4;
+    cursor: pointer;
+}
+/* parte2 -------------------- centro*/
+
+.parte2 .apartado1{
+    margin: 50px auto 0px auto;
+    width: 90%;
+    height: 100px;
+    background: var(--azul);
+    border: 5px solid var(--azulClaro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.apartado1 h2{
+    font-size: 55px;
+    color: white;
+}
+.parte2 .apartado2{
+    margin: 0 auto 50px auto;
+    width: 90%;
+    height: 1000px;
+    border: 5px solid var(--azulClaro);
+}
+/* tabla 1 -------------------- tabla 1*/
+
+#banner{
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+#banner th{
+    padding: 10px 10px;
+    border: 1px solid black;
+    text-align: center !important;
+}
+#banner th h2{
+    font-size: 30px;
+}
+#banner th #title{
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+/* tabla 2 -------------------- tabla 2*/
+#tableBody{
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+#tableBody th{
+    padding: 10px 10px;
+    border: 1px solid black;
+    text-align: center !important;
+}
+#tableBody th h2{
+    font-size: 30px;
+}
+#tableBody th #title{
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+#tableBody th #title1{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+#tableBody tr .periodo{
+    width: 200px;
+}
+#tableBody tr .logro{
+    width: 500px;
+}
+/* tabla 3 -------------------- tabla 3*/
+#ultimo{
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+#ultimo th{
+    padding: 10px 10px;
+    border: 1px solid black;
+    text-align: start !important;
+}
+
+#ultimo #lugar{
+    height: 50px;
+}
+/* footer -------------------- footer*/
+.contenedor footer{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 130px;
+    background-image: url("../img/gris\ fondo.jpg");
+}
+
+footer .informacion1{
+    color: white;
+    font-size: 30px;
+    margin: 15px 0px 0px 50px;
+}
+footer .informacion2{
+    margin: 15px 0px;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-around;
+}
