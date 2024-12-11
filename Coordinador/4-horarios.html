@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/c4.css">
     <link rel="icon" href="img/icono.png">
     <title>Horarios</title>
@@ -33,6 +34,39 @@
                 <button type="submit" id="planilla">Planillas</button>
                 <Button type="submit" id="usuario">Usuario</Button>
                 <Button type="submit" id="salir">Cerra Sesion</Button>
+            </div>
+
+            <div class="parte2">
+                <h2>Horarios:</h2>
+                <div class="linea"></div>
+
+                <div class="horarios">
+                    <button class="crear-horario">Crear Horario</button>
+                    <div class="filtros">
+                        <select id="nivel">
+                            <option value="primaria">Primaria</option>
+                            <option value="secundaria">Secundaria</option>
+                            <option value="bachiller">Bachiller</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="lista-horarios">
+                    <div class="horario">
+                        <h3>Primaria: 302 Jornada Tarde</h3>
+                        <button class="ver-horario">Ver Horario</button>
+                        <button class="eliminar-horario">Opción</button>
+                    </div>
+                    <div class="horario">
+                        <h3>Secundaria: 602 Jornada Tarde</h3>
+                        <button class="ver-horario">Ver Horario</button>
+                        <button class="eliminar-horario">Opción</button>
+                    </div>
+                    <div class="horario">
+                        <h3>Bachiller: 1104 Jornada Tarde</h3>
+                        <button class="ver-horario">Ver Horario</button>
+                        <button class="eliminar-horario">Opción</button>
+                    </div>
+                </div>
             </div>
 
         </article>
