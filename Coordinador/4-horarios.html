@@ -41,29 +41,34 @@
                 <div class="linea"></div>
 
                 <div class="horarios">
+                    <input type="text" placeholder="Buscar..." id="buscar">
                     <button class="crear-horario">Crear Horario</button>
                     <div class="filtros">
                         <select id="nivel">
-                            <option value="primaria">Primaria</option>
-                            <option value="secundaria">Secundaria</option>
-                            <option value="bachiller">Bachiller</option>
+                            <option value="primaria">Todos</option>
+                            <option value="primaria">Primaria--Mañana</option>
+                            <option value="secundaria">Secundaria--Mañana</option>
+                            <option value="bachiller">Bachiller--Mañana</option>
+                            <option value="primaria">Primaria--Tarde</option>
+                            <option value="secundaria">Secundaria--Tarde</option>
+                            <option value="bachiller">Bachiller--Tarde</option>
                         </select>
                     </div>
                 </div>
                 <div class="lista-horarios">
                     <div class="horario">
                         <h3>Primaria: 302 Jornada Tarde</h3>
-                        <button class="ver-horario">Ver Horario</button>
+                        <button class="ver-horario" id="ver">Ver Horario</button>
                         <button class="eliminar-horario">Opción</button>
                     </div>
                     <div class="horario">
                         <h3>Secundaria: 602 Jornada Tarde</h3>
-                        <button class="ver-horario">Ver Horario</button>
+                        <button class="ver-horario" id="ver2" >Ver Horario</button>
                         <button class="eliminar-horario">Opción</button>
                     </div>
                     <div class="horario">
                         <h3>Bachiller: 1104 Jornada Tarde</h3>
-                        <button class="ver-horario">Ver Horario</button>
+                        <button class="ver-horario" id="ver3">Ver Horario</button>
                         <button class="eliminar-horario">Opción</button>
                     </div>
                 </div>

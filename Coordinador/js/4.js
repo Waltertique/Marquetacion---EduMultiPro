@@ -33,6 +33,22 @@ document.getElementById('salir').addEventListener('click', function () {
     // Redirige a otra página
     window.location.href = '../Principal/index.html';
 });
+document.getElementById('ver').addEventListener('click', function () {
+    // Redirige a otra página
+    window.location.href = '../Coordinador/9-crearHorario.html';
+});
+document.getElementById('ver2').addEventListener('click', function () {
+    // Redirige a otra página
+    window.location.href = '../Coordinador/9-crearHorario.html';
+});
+document.getElementById('ver3').addEventListener('click', function () {
+    // Redirige a otra página
+    window.location.href = '../Coordinador/9-crearHorario.html';
+});
+
+//parte 2------------------
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
 
