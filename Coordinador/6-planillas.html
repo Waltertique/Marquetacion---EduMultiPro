@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/c6.css">
     <link rel="icon" href="img/icono.png">
     <title>Planillas</title>
@@ -33,6 +34,44 @@
                 <button type="submit" id="planilla">Planillas</button>
                 <Button type="submit" id="usuario">Usuario</Button>
                 <Button type="submit" id="salir">Cerra Sesion</Button>
+            </div>
+
+            <div class="parte2">
+                <h2>Planillas:</h2>
+                <div class="linea"></div>
+
+                <div class="horarios">
+                    <input type="text" placeholder="Buscar..." id="buscar">
+                    <button class="crear-horario">Crear Planilla</button>
+                    <div class="filtros">
+                        <select id="nivel">
+                            <option value="primaria">Todos</option>
+                            <option value="primaria">Primaria--Mañana</option>
+                            <option value="secundaria">Secundaria--Mañana</option>
+                            <option value="bachiller">Bachiller--Mañana</option>
+                            <option value="primaria">Primaria--Tarde</option>
+                            <option value="secundaria">Secundaria--Tarde</option>
+                            <option value="bachiller">Bachiller--Tarde</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="lista-horarios">
+                    <div class="horario">
+                        <h3>Primaria: 302 Jornada Tarde</h3>
+                        <button class="ver-horario" id="ver">Ver Planilla</button>
+                        <button class="eliminar-horario">Opción</button>
+                    </div>
+                    <div class="horario">
+                        <h3>Secundaria: 602 Jornada Tarde</h3>
+                        <button class="ver-horario" id="ver2" >Ver Planilla</button>
+                        <button class="eliminar-horario">Opción</button>
+                    </div>
+                    <div class="horario">
+                        <h3>Bachiller: 1104 Jornada Tarde</h3>
+                        <button class="ver-horario" id="ver3">Ver Planilla</button>
+                        <button class="eliminar-horario">Opción</button>
+                    </div>
+                </div>
             </div>
 
         </article>

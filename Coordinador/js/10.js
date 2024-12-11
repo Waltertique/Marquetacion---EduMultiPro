@@ -33,25 +33,3 @@ document.getElementById('salir').addEventListener('click', function () {
     // Redirige a otra página
     window.location.href = '../Principal/index.html';
 });
-
-// Parte 2
-
-document.getElementById('verMas').addEventListener('click', function () {
-    // Redirige a otra página
-    window.location.href = '../Coordinador/3-apartadoNoticias.html';
-});
-
-document.getElementById('verMas2').addEventListener('click', function () {
-    // Redirige a otra página
-    window.location.href = '../Coordinador/3-apartadoNoticias.html';
-});
-
-document.getElementById('verMas3').addEventListener('click', function () {
-    // Redirige a otra página
-    window.location.href = '../Coordinador/3-apartadoNoticias.html';
-});
-
-document.getElementById('verMas4').addEventListener('click', function () {
-    // Redirige a otra página
-    window.location.href = '../Coordinador/3-apartadoNoticias.html';
-});
