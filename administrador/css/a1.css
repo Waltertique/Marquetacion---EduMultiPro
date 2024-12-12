@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+:root {
+    --azul: #007bbd;
+    --blanco: rgb(253, 243, 229);
+    --gris: rgb(99, 95, 95);
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--blanco);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/* Baner -------------------- Baner*/
+.contenedor nav{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    background: var(--azul);
+    background-position: center;
+    background-size: cover;
+}
+.contenedor nav .uno{
+    margin: 20px 20px 0px 40px;
+    width: 130px;
+    height: 90px;
+}
+.contenedor nav .uno img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor nav .dos{
+    margin: 20px 0px;
+    width: 500px;
+    height: 90px;
+    justify-items: center;
+}
+.contenedor nav .dos p{
+    font-size: 80px;
+    color: white;
+}
+.contenedor nav .tres{
+    margin: 20px 40px;
+    width: 800px;
+    height: 90px;
+    display: grid;
+    place-items: center;
+   
+}
+.contenedor nav .tres p{
+    font-size: 40px;
+    line-height: center;
+    color: aqua;
+}
+/* centro -------------------- centro*/
+.contenedor article{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+article .opciones{
+    width: 20%;
+    height: 523px;
+    background: rgb(73, 72, 72);
+}
+article .contenido{
+    width: 80%;
+    height: 523px;
+}
+/* menu -------------------- munu*/
+
+.menu li{
+    position: relative;
+}
+.menu li:hover ul{
+    display: block;
+}
+.menu ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(73, 72, 72);
+}
+
+/* footer -------------------- footer*/
+.contenedor footer{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 130px;
+    background-image: url("../img/gris\ fondo.jpg");
+}
+
+footer .informacion1{
+    color: white;
+    font-size: 30px;
+    margin: 15px 0px 0px 50px;
+}
+footer .informacion2{
+    margin: 15px 0px;
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-around;
+}
