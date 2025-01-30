@@ -6,6 +6,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/1.css">
     <link rel="icon" href="img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- datatables css y js -->
+    <link href="//cdn.datatables.net/2.1.8/css/dataTables.dataTables.min.css" rel="stylesheet">
+   <script src="//cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+
     <title>Pagina Principal</title>
 </head>
 <body>
@@ -16,14 +23,262 @@
             <div class="uno"><img src="img/logo.png" alt=""></div>
             <div class="dos"><p>EduMultiPro</p></div>
             <div class="tres"><p>Tu Aliado en el camino educativo</p></div>
-            <div class="cuatro">
-                <input type="text" placeholder="Buscar...">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
         </nav>
         <!--Contenido-->
         <article>
-        
+            <div class="barraLateral">
+                <div class="opciones">
+                    <div class="menu">
+                        <a href=""><i class="fa-solid fa-user"><p>Usuario</p></i></a>
+                        <a href=""><i class="fa-solid fa-layer-group"><p>Cursos</p></i></a>
+                        <a href=""><i class="fa-solid fa-calendar-days"><p>Horarios</p></i></a>
+                        <a href=""><i class="fa-solid fa-users-rectangle"><p>Aulas</p></i></a>
+                        <a href=""><i class="fa-solid fa-ranking-star"><p>Notas</p></i></a>
+                        <a href=""><i class="fa-solid fa-folder-open"><p>Planillas</p></i></a>
+                        <a href=""><i class="fa-solid fa-envelopes-bulk"><p>Boletines</p></i></a>
+                        <a href=""><i class="fa-solid fa-radio"><p>Noticias</p></i></a> 
+                    </div>
+                </div>
+            </div>
+
+            <!--Tabla-->
+            <div class="contenidoTabla">
+            <h1>Gestion de Usuarios</h1>
+            <div class="contenedor-tabla">
+                <table class="tablaUsuario" id="tablaUsuarios">
+                    <thead>
+                        <tr>
+                            <th>Identificación</th>
+                            <th>P Nombre</th>
+                            <th>S Nombre</th>
+                            <th>P Apellido</th>
+                            <th>S Apellido</th>
+                            <th>Modificar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3243232</td>
+                            <td>Pedro</td>
+                            <td>Jose</td>
+                            <td>Segundo</td>
+                            <td>Cuadrado</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>32432233</td>
+                            <td>Kevin</td>
+                            <td>Miguel</td>
+                            <td>Perez</td>
+                            <td>Domingo</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>54354333</td>
+                            <td>Samuel</td>
+                            <td>Alejandro</td>
+                            <td>Quintero</td>
+                            <td>Sanches</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>4543433</td>
+                            <td>Carlos</td>
+                            <td>Camilo</td>
+                            <td>Rivera</td>
+                            <td>Tique</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>3243232</td>
+                            <td>Pedro</td>
+                            <td>Jose</td>
+                            <td>Segundo</td>
+                            <td>Cuadrado</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>32432233</td>
+                            <td>Kevin</td>
+                            <td>Miguel</td>
+                            <td>Perez</td>
+                            <td>Domingo</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>54354333</td>
+                            <td>Samuel</td>
+                            <td>Alejandro</td>
+                            <td>Quintero</td>
+                            <td>Sanches</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>4543433</td>
+                            <td>Carlos</td>
+                            <td>Camilo</td>
+                            <td>Rivera</td>
+                            <td>Tique</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>3243232</td>
+                            <td>Pedro</td>
+                            <td>Jose</td>
+                            <td>Segundo</td>
+                            <td>Cuadrado</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>32432233</td>
+                            <td>Kevin</td>
+                            <td>Miguel</td>
+                            <td>Perez</td>
+                            <td>Domingo</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>54354333</td>
+                            <td>Samuel</td>
+                            <td>Alejandro</td>
+                            <td>Quintero</td>
+                            <td>Sanches</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>4543433</td>
+                            <td>Carlos</td>
+                            <td>Camilo</td>
+                            <td>Rivera</td>
+                            <td>Tique</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>3243232</td>
+                            <td>Pedro</td>
+                            <td>Jose</td>
+                            <td>Segundo</td>
+                            <td>Cuadrado</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>32432233</td>
+                            <td>Kevin</td>
+                            <td>Miguel</td>
+                            <td>Perez</td>
+                            <td>Domingo</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>54354333</td>
+                            <td>Samuel</td>
+                            <td>Alejandro</td>
+                            <td>Quintero</td>
+                            <td>Sanches</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>4543433</td>
+                            <td>Carlos</td>
+                            <td>Camilo</td>
+                            <td>Rivera</td>
+                            <td>Tique</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>3243232</td>
+                            <td>Pedro</td>
+                            <td>Jose</td>
+                            <td>Segundo</td>
+                            <td>Cuadrado</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>32432233</td>
+                            <td>Kevin</td>
+                            <td>Miguel</td>
+                            <td>Perez</td>
+                            <td>Domingo</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>54354333</td>
+                            <td>Samuel</td>
+                            <td>Alejandro</td>
+                            <td>Quintero</td>
+                            <td>Sanches</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>4543433</td>
+                            <td>Carlos</td>
+                            <td>Camilo</td>
+                            <td>Rivera</td>
+                            <td>Tique</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>3243232</td>
+                            <td>Pedro</td>
+                            <td>Jose</td>
+                            <td>Segundo</td>
+                            <td>Cuadrado</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>32432233</td>
+                            <td>Kevin</td>
+                            <td>Miguel</td>
+                            <td>Perez</td>
+                            <td>Domingo</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>54354333</td>
+                            <td>Samuel</td>
+                            <td>Alejandro</td>
+                            <td>Quintero</td>
+                            <td>Sanches</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>4543433</td>
+                            <td>Carlos</td>
+                            <td>Camilo</td>
+                            <td>Rivera</td>
+                            <td>Tique</td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
+                            <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+
         </article>
 
         <!--Footer-->

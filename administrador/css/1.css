@@ -29,9 +29,10 @@
     background: var(--azul);
     background-position: center;
     background-size: cover;
+    border-bottom: 3px solid var(--azulClaro);
 }
 .contenedor nav .uno{
-    margin: 20px 20px 0px 40px;
+    margin: 20px 20px 0px 50px;
     width: 130px;
     height: 90px;
 
@@ -42,7 +43,7 @@
 }
 
 .contenedor nav .dos{
-    margin: 20px 0px;
+    margin: 20px 30px;
     width: 450px;
     height: 90px;
     justify-items: center;
@@ -53,55 +54,99 @@
 }
 .contenedor nav .tres{
     margin: 20px 0px 0px 40px;
-    width: 500px;
+    width: 600px;
     height: 90px;
     display: grid;
     place-items: center;
    
 }
 .contenedor nav .tres p{
-    font-size: 35px;
+    font-size: 40px;
     line-height: center;
     color: aqua;
 }
-.contenedor nav .cuatro{
-    margin: 0px 25px;
-    width: 200px;
-    display: grid;
-    place-content: center;
-    grid-template-columns: auto auto;
-    position: relative;
-}
-.contenedor nav .cuatro input{
-    padding: 0px 10px;
-    border-radius: 10px 0px 0px 10px;
-    width: 150px;
-    height: 35px;
-    border: 0;
-    outline: none;
-    font-size: 15px;
-}
-.contenedor nav .cuatro input::placeholder{
-    font-weight: normal;
-}
-.contenedor nav .cuatro input:hover::placeholder{
-    color: blue;
-}
-.contenedor nav .cuatro button{
-    width: 35px;
-    height: 36px;
-    float: right;
-    border-radius: 0 10px 10px 0;
-}
-.contenedor nav .cuatro button:hover{
-    transform: scale(1.1);
-    color: blue;
-}
+
 /* centro -------------------- centro*/
 /* parte1 -------------------- centro*/
 .contenedor article{
     flex: 1;
+    display: flex;
 }
+
+ article .barraLateral{
+    width: 250px;
+    background-color: var(--azul);
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu  i{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    padding: 15px 25px;
+    border-bottom: 1px solid var(--azulClaro);
+}
+.menu i p{
+    margin: 0px 10px;
+}
+i:hover{
+    cursor: pointer;
+    background: var(--azulClaro);
+}
+/* tabla -------------------- tabla*/
+.contenidoTabla{
+    flex: 1;
+    padding: 20px;
+}
+ h1{
+    font-size: 28px;
+    margin: 10px 0px 20px 30px;
+}
+
+.contenedor-tabla{  
+    overflow-x: auto;
+    margin: 0px 0px 20px 0px;
+    background-color: rgb(255, 237, 212);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1) ;  
+}
+table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px ;
+}
+thead{
+    background-color: rgb(58, 58, 58);
+    color: var(--blanco);
+}
+.tablaUsuarios th, td{
+    padding: 10px;
+    text-align: center !important;
+    border: 1px solid rgb(173, 173, 173);
+}
+
+button{
+    background-color: var(--azul);
+    color: var(--blanco);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: black;
+}
+
 
 /* footer -------------------- footer*/
 .contenedor footer{
