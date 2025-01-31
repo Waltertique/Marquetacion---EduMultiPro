@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('#tablaUsuarios').DataTable({
+    $('.tablaUsuarios').DataTable({
        language:{
         processing:"Procesando...",
         search:"Buscar:",
@@ -22,5 +22,6 @@ $(document).ready(function(){
        paging:true,
        searching:true,
        ordering:true 
+       
     });
-    });
+    }); 
