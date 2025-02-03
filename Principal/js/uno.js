@@ -48,6 +48,17 @@ document.querySelector('.btn-ingresar').addEventListener('click', function (even
             window.location.href = '../Coordinador/1-inicio.html'; 
         });
     }
+    else if (usuario === 'admin99' && contraseña === '12345') {
+        Swal.fire({
+            icon: 'success',
+            title: 'Inicio de sesión exitoso',
+            text: 'Bienvenido Administrador.',
+            confirmButtonText: 'Ingresar',
+        }).then(() => {
+            // Redirigir a otra página
+            window.location.href = '../administrador/1-PaginaPrincipal.html'; 
+        });
+    }
     else {
         Swal.fire({
             icon: 'error',
