@@ -35,7 +35,6 @@
                         <a href="../administrador/4-Aulas.html"><i class="fa-solid fa-users-rectangle"><p>Aulas</p></i></a>
                         <a href="../administrador/5-Notas.html"><i class="fa-solid fa-ranking-star"><p>Notas</p></i></a>
                         <a href="../administrador/6-Planillas.html"><i class="fa-solid fa-folder-open"><p>Planillas</p></i></a>
-                        <a href="../administrador/7-Boletines.html"><i class="fa-solid fa-envelopes-bulk"><p>Boletines</p></i></a>
                         <a href="../administrador/8-Noticias.html"><i class="fa-solid fa-radio"><p>Noticias</p></i></a>
                         <a href="../Principal/index.html"><i class="fa-solid fa-right-to-bracket"><p>Salir</p></i></a> 
                     </div>
@@ -45,261 +44,221 @@
             <!--Tabla-->
             <div class="contenidoTabla">
                 <div class="titulo">
-                    <h1>Gestion de Usuarios</h1>
-                    <button>Crear Usuario</button>
+                    <h1>Gestion de Planillas</h1>
+                    <button>Crear Planilla</button>
                 </div>
                 <div class="contenedor-tabla">
                     <table class="tablaUsuarios" id="tablaUsuarios">
                         <thead>
                             <tr>
-                                <th>Identificación</th>
-                                <th>P Nombre</th>
-                                <th>S Nombre</th>
-                                <th>P Apellido</th>
-                                <th>S Apellido</th>
-                                <th>Informacion</th>
+                                <th>ID</th>
+                                <th>Nombre Planilla</th>
+                                <th>Curso</th>
+                                <th>Jornada</th>
+                                <th>Periodo</th>
+                                <th>Planilla</th>
                                 <th>Modificar</th>
                                 <th>Eliminar</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>3243232</td>
-                                <td>Pedro</td>
-                                <td>Jose</td>
-                                <td>Segundo</td>
-                                <td>Cuadrado</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL001</td>
+                                <td>Planilla curs 902</td>
+                                <td>902</td>
+                                <td>Tarde</td>
+                                <td>Primer periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>32432233</td>
-                                <td>Kevin</td>
-                                <td>Miguel</td>
-                                <td>Perez</td>
-                                <td>Domingo</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>Pl002</td>
+                                <td>Planilla curs 504</td>
+                                <td>504</td>
+                                <td>Mañana</td>
+                                <td>Segundo Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>54354333</td>
-                                <td>Samuel</td>
-                                <td>Alejandro</td>
-                                <td>Quintero</td>
-                                <td>Sanches</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL003</td>
+                                <td>Planilla curs 701</td>
+                                <td>701</td>
+                                <td>Mañana</td>
+                                <td>Tercer Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>4543433</td>
-                                <td>Carlos</td>
-                                <td>Camilo</td>
-                                <td>Rivera</td>
-                                <td>Tique</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL004</td>
+                                <td>Planilla curs 302</td>
+                                <td>302</td>
+                                <td>Tarde</td>
+                                <td>Cuarto Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>3243232</td>
-                                <td>Pedro</td>
-                                <td>Jose</td>
-                                <td>Segundo</td>
-                                <td>Cuadrado</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL001</td>
+                                <td>Planilla curs 902</td>
+                                <td>902</td>
+                                <td>Tarde</td>
+                                <td>Primer periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>32432233</td>
-                                <td>Kevin</td>
-                                <td>Miguel</td>
-                                <td>Perez</td>
-                                <td>Domingo</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>Pl002</td>
+                                <td>Planilla curs 504</td>
+                                <td>504</td>
+                                <td>Mañana</td>
+                                <td>Segundo Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>54354333</td>
-                                <td>Samuel</td>
-                                <td>Alejandro</td>
-                                <td>Quintero</td>
-                                <td>Sanches</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL003</td>
+                                <td>Planilla curs 701</td>
+                                <td>701</td>
+                                <td>Mañana</td>
+                                <td>Tercer Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>4543433</td>
-                                <td>Carlos</td>
-                                <td>Camilo</td>
-                                <td>Rivera</td>
-                                <td>Tique</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL004</td>
+                                <td>Planilla curs 302</td>
+                                <td>302</td>
+                                <td>Tarde</td>
+                                <td>Cuarto Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>3243232</td>
-                                <td>Pedro</td>
-                                <td>Jose</td>
-                                <td>Segundo</td>
-                                <td>Cuadrado</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL001</td>
+                                <td>Planilla curs 902</td>
+                                <td>902</td>
+                                <td>Tarde</td>
+                                <td>Primer periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>32432233</td>
-                                <td>Kevin</td>
-                                <td>Miguel</td>
-                                <td>Perez</td>
-                                <td>Domingo</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>Pl002</td>
+                                <td>Planilla curs 504</td>
+                                <td>504</td>
+                                <td>Mañana</td>
+                                <td>Segundo Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>54354333</td>
-                                <td>Samuel</td>
-                                <td>Alejandro</td>
-                                <td>Quintero</td>
-                                <td>Sanches</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL003</td>
+                                <td>Planilla curs 701</td>
+                                <td>701</td>
+                                <td>Mañana</td>
+                                <td>Tercer Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>4543433</td>
-                                <td>Carlos</td>
-                                <td>Camilo</td>
-                                <td>Rivera</td>
-                                <td>Tique</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL004</td>
+                                <td>Planilla curs 302</td>
+                                <td>302</td>
+                                <td>Tarde</td>
+                                <td>Cuarto Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>3243232</td>
-                                <td>Pedro</td>
-                                <td>Jose</td>
-                                <td>Segundo</td>
-                                <td>Cuadrado</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL001</td>
+                                <td>Planilla curs 902</td>
+                                <td>902</td>
+                                <td>Tarde</td>
+                                <td>Primer periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>32432233</td>
-                                <td>Kevin</td>
-                                <td>Miguel</td>
-                                <td>Perez</td>
-                                <td>Domingo</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>Pl002</td>
+                                <td>Planilla curs 504</td>
+                                <td>504</td>
+                                <td>Mañana</td>
+                                <td>Segundo Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>54354333</td>
-                                <td>Samuel</td>
-                                <td>Alejandro</td>
-                                <td>Quintero</td>
-                                <td>Sanches</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL003</td>
+                                <td>Planilla curs 701</td>
+                                <td>701</td>
+                                <td>Mañana</td>
+                                <td>Tercer Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>4543433</td>
-                                <td>Carlos</td>
-                                <td>Camilo</td>
-                                <td>Rivera</td>
-                                <td>Tique</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL004</td>
+                                <td>Planilla curs 302</td>
+                                <td>302</td>
+                                <td>Tarde</td>
+                                <td>Cuarto Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>3243232</td>
-                                <td>Pedro</td>
-                                <td>Jose</td>
-                                <td>Segundo</td>
-                                <td>Cuadrado</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL001</td>
+                                <td>Planilla curs 902</td>
+                                <td>902</td>
+                                <td>Tarde</td>
+                                <td>Primer periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>32432233</td>
-                                <td>Kevin</td>
-                                <td>Miguel</td>
-                                <td>Perez</td>
-                                <td>Domingo</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>Pl002</td>
+                                <td>Planilla curs 504</td>
+                                <td>504</td>
+                                <td>Mañana</td>
+                                <td>Segundo Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>54354333</td>
-                                <td>Samuel</td>
-                                <td>Alejandro</td>
-                                <td>Quintero</td>
-                                <td>Sanches</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL003</td>
+                                <td>Planilla curs 701</td>
+                                <td>701</td>
+                                <td>Mañana</td>
+                                <td>Tercer Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
                             <tr>
-                                <td>4543433</td>
-                                <td>Carlos</td>
-                                <td>Camilo</td>
-                                <td>Rivera</td>
-                                <td>Tique</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
-                                <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
-                                <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
-                            </tr>
-                            <tr>
-                                <td>3243232</td>
-                                <td>Pedro</td>
-                                <td>Jose</td>
-                                <td>Segundo</td>
-                                <td>Cuadrado</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
-                                <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
-                                <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
-                            </tr>
-                            <tr>
-                                <td>32432233</td>
-                                <td>Kevin</td>
-                                <td>Miguel</td>
-                                <td>Perez</td>
-                                <td>Domingo</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
-                                <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
-                                <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
-                            </tr>
-                            <tr>
-                                <td>54354333</td>
-                                <td>Samuel</td>
-                                <td>Alejandro</td>
-                                <td>Quintero</td>
-                                <td>Sanches</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
-                                <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
-                                <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
-                            </tr>
-                            <tr>
-                                <td>4543433</td>
-                                <td>Carlos</td>
-                                <td>Camilo</td>
-                                <td>Rivera</td>
-                                <td>Tique</td>
-                                <td><button><i class="fa-solid fa-circle-info"></i></button></td>
+                                <td>PL004</td>
+                                <td>Planilla curs 302</td>
+                                <td>302</td>
+                                <td>Tarde</td>
+                                <td>Cuarto Periodo</td>
+                                <td><button><i class="fa-solid fa-folder-open"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-gear"></i></button></td>
                                 <td><button class="btn-icon"><i class="fa-solid fa-trash"></i></button></td>
                             </tr>
